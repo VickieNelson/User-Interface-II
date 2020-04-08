@@ -7,7 +7,6 @@ box-sizing:border-box;
 margin: 0px;
 padding: 0px;
 max-width: 100%;
-
 }
 /* end reset code */
 
@@ -20,12 +19,6 @@ font-family: "Lato", sans-serif;
 h1, h2, h3, h4 {
 font-family: "Noto Serif", serif ;
 }
-
-section {
-
-}
-
-/* section styles */
 
 /* header styles */
 
@@ -139,7 +132,6 @@ margin: 16px;
 footer {
     display: flex;
     justify-content: center;
- background-color: #a9def9;   
-    margin-bottom:4px;
+    background-color: #a9def9;   
 }
 
