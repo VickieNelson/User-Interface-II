@@ -8,12 +8,17 @@ margin: 0px;
 padding: 0px;
 max-width: 100%;
 }
+html {
+font-size: 62.5%;
+}
 /* end reset code */
 
 /* general styles */
 
 body{
 font-family: "Lato", sans-serif;
+background-color:  	#fffff2;
+font-size:2.4rem;
 }
 
 h1, h2, h3, h4 {
@@ -31,35 +36,41 @@ justify-content: center;
 /* navigation */
 
 .topnav{
-font-size: 18px;
+font-size: 2.4rem;
 display: flex;
-justify-content: center;
-color: white;
+justify-content: center ;
+align-items: center;
 }
+
+.topnav a {
+color: #107dac;
+text-decoration: none;
+}
+.topnav a:hover{
+color:  	#1ebbd7;
+text-decoration: underline ;
+}    
+
 
 .title1 {
-border: 2px solid #a9def9;
-background-color: #a9def9;
-color: white;
-padding: 8px;
-
+/* padding: %; */
+margin: .75%;
 }
 .title2 {
-border: 2px solid #a9def9;
-color: white;
-padding: 8px;
+/* padding: .5%px; */
+margin: .75%;
 }
 
 .title3 {
-border: 2px solid #a9def9;
-color: white;
-padding: 8px;
+/* padding: .5%; */
+margin: .75%;
+
 }
 
 .title4 {
-border: 2px solid #a9def9;
-color: white;
-padding:8px;
+/* padding:.5%; */
+margin: .75%;
+
 }
 
 h1 {
@@ -70,68 +81,217 @@ text-align: center;
 margin: 48px;
 }
 
+/* intro section */
+
 .intro {
-width: 600px;
+width: 60%;
 display: flex;
 justify-content: center;
 }
 
-p{
-width: 600px;
+.introparag p{
+width: 60%;
+text-align: left;
 }
 
 .introparag {
-display:flex;
+width: 60%
+text-align:center;
+display: flex; 
 justify-content: center;
 margin-bottom: 48px;
 }
 
 .largeimage {
-width: 1200px;
+width: 120%;
 margin: auto;
-padding: 24px;
+padding: 2.4%;
 }
 
 img {
 border-radius: 4px;
-padding: 24px;
+padding: 2.4%;
 }
 
+/* projects section */
+
 #projectsgroup {
-margin-top: 64px;
-margin-bottom: 64px;
-margin-left: 24px;
-height: 150px;
+margin-top: 6.45;
+margin-bottom: 6.4%;
+margin-left: 2.4%;
+height: 1.50%;
 display: flex;
 justify-content: space-evenly;
 }
 
 #projectsgroup img {
-    width: 200px;
-
+width: 20.0%;
 }
+
 .grouptext {
-margin-right: 48px;
-width: 200px;
-font-size: 18px;
-
+margin-right: 4.8%;
+margin-top: 8%;
+width: 20.0%;
+font-size: 2.4rem;
 }
 
+/* button and footer */
 
 .button {
 background-color: #060c4a;
 border: none;
+font-size: 4.2rem;
+width: 30%;
 color: white;
-padding: 15px 25px;
+padding: 1.5% 2.5%;
 text-align: center;
-font-size: 18px;
+font-size: 1.8rem;
 cursor: pointer;
 border-radius: 8px;
-margin: 16px;
+margin: 1.6%;
 }
+
+footer {
+display: flex;
+justify-content: center;
+background-color: #1ebbd7;   
+}
+
+/* media query tablet */
+@media (max-width: 800px){
+
+/* projects section tablet */
+
+#projectsgroup {
+margin-left: 2.8%;
+margin-right:2.8%
+height: 1.20%;
+display: flex;
+justify-content: space-evenly;
+}
+
+#projectsgroup img {
+    width: 20.0%;
+}
+
+.grouptext {
+margin-right: 4.8%;
+margin-top: .5%;
+width: 25.0%;
+height: 10%;
+font-size: 2.4rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+
+/* footer and button tablet */
+
 footer {
     display: flex;
     justify-content: center;
-    background-color: #a9def9;   
+    background-color: #1ebbd7;   
+    Height: 80px;
 }
 
+.button {
+    background-color: #060c4a;
+    border: none;
+    color: white;
+    padding: 1.5% 2.5%;
+    text-align: center;
+    font-size: 3.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 2.0%;
+    margin-bottom: 2.0%;
+    width: 800%;
+    }
+}
+
+/* media query mobile */
+@media (max-width: 500px){
+
+    /* intro mobile */
+
+.introparag p{
+    width: 90%;
+    text-align: left;
+    }
+    
+    .introparag {
+        width: 90%
+        text-align: center;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 48px;
+    }
+
+    .largeimage {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10%;
+        padding: 2.4%;
+        }
+    /* projects mobile */
+
+#projectsgroup {
+
+margin-left: 2.8%;
+margin-right:2.8%
+width: 100%;
+height:100%
+display: flex;
+flex-direction:column;
+justify-content: space-between;
+align-items: center;
+order: -1;
+}
+
+#projectsgroup img {
+    width: 100.0%;
+    margin-bottom: 2%;
+}
+
+
+.grouptext {
+    margin-right: 4.8%;
+    margin-top: .5%;
+    margin-bottom: 8%;
+    width: 90.0%;
+    height: 10%;
+    font-size: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: -1;
+    }
+/* button and footer mobile */
+
+    footer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100px;
+        background-color: #1ebbd7;  
+        align-items: center; 
+
+    }
+
+    .button {
+        background-color: #060c4a;
+        border: none;
+        color: white;
+        padding: 1.5% 2.5%;
+        text-align: center;
+        font-size: 2.4rem;
+        cursor: pointer;
+        border-radius: 8px;
+        margin-top: 4.0%;
+        margin-bottom: 2.0%;
+        width: 70%;
+        height: 60%
+        }
+
+}
